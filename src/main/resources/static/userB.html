@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="init()" name="创建连接">创建连接B</button>
+    <button onclick="send()" name="发送消息">发送消息B</button>
+</body>
+<script>
+    var ws = null;
+
+    function init(){
+        var _ws = new WebSocket("ws://localhost:9999/ws");
+        _ws.onopen = function(){
+            console.log('WS客户端已经成功连接到服务器上')
+        }
+        ws = _ws;
+        ws.onmessage = function (e) {
+            console.log(e.data);
+        };
+    }
+
+    function send(){
+        var sendString = ("我是用户B ====> " + new Date());
+        ws.send(sendString);
+        console.log(sendString);
+    }
+</script>
+</html>
