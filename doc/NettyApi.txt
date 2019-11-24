@@ -1,0 +1,18 @@
+1.netty 参考资料
+https://my.oschina.net/waylau/blog/392441
+Netty 实现 WebSocket 聊天功能
+
+https://blog.csdn.net/liuzhiquan_1025/article/details/77337658
+netty点对点聊天程序
+
+https://www.cnblogs.com/crazymakercircle/p/9912267.html
+etty Zookeeper Redis 高并发实战
+
+https://blog.csdn.net/u010721764/article/details/90648371
+基于Spring Cloud Gateway + STOMP 实现WebSocket负载均衡
+
+https://yq.aliyun.com/articles/629701
+springboot 分布式 springcloud
+
+https://blog.csdn.net/fjssharpsword/article/details/52354098
+Netty通信框架Java实现小记
